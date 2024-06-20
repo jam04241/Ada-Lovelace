@@ -1,0 +1,54 @@
+
+
+@font-face{
+    font-family: Lovelace;
+    src:url(Font/lovelace-medium.ttf);
+}   
+*{
+    /* font-family: Lovelace; */
+    /* font-family: JetBrains Mono; */
+    font-family: Concert One;
+    color: #ffff;
+    height: auto;
+    width: auto;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0,0,0,0.75)), url(Picture/Ada-Lovelace.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.name, #ada{
+    padding-left: 50px;
+    font-family: Lovelace;
+    text-align: left;  
+    font-size: 50px;  
+}
+.name, #boied{
+    padding-left: 50px;
+    font-family: Jetbrains Mono;
+}
+
+.name, #description{  
+    font-family: Concert One;   
+    text-align: justify;
+    padding: 0px 50px 0px 50px;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
+footer, #Jam{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 120px;
+    text-align: center;
+    justify-content: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
