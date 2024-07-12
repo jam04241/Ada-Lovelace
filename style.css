@@ -5,8 +5,6 @@
     src:url(Font/lovelace-medium.ttf);
 }   
 *{
-    /* font-family: Lovelace; */
-    /* font-family: JetBrains Mono; */
     font-family: Concert One;
     color: #ffff;
     height: auto;
@@ -14,41 +12,81 @@
 }
 body{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0,0,0,0.75)), url(Picture/Ada-Lovelace.jpeg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(Picture/Ada-Lovelace-blur.jpg);
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ 
+}
+.name, #ada, #boied, #description{
+    transition: 1s;
+}
+#ada{
+    font-family: 'Lovelace', 'sans-serif','monospace';
+    text-align: center;  
+    font-size: 100px;  
     
 }
 
-.name, #ada{
-    padding-left: 50px;
-    font-family: Lovelace;
-    text-align: left;  
-    font-size: 50px;  
+#boied{
+    margin-top: -70px;
+    text-align: center;
+    font-family: Jetbrains Mono, 'sans-serif','monospace';
 }
-.name, #boied{
-    padding-left: 50px;
-    font-family: Jetbrains Mono;
-}
-
-.name, #description{  
-    font-family: Concert One;   
+#description{  
+    font-family: Concert One, 'sans-serif','monospace';   
     text-align: justify;
     padding: 0px 50px 0px 50px;
     font-size: 25px;
 }
+
 a{
     text-decoration: none;
     font-size: 15px;
 }
 footer, #Jam{
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
+    font-family: "Ubuntu", 'sans-serif','monospace';
     font-style: normal;
-    padding-top: 120px;
     text-align: center;
     justify-content: center;
+    padding-top: 150px;
 }
 ::-webkit-scrollbar{
     display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 360px){
+
+        #ada{
+            font-size: 50px;  
+            
+        }
+        
+        #boied{
+            margin-top: -1px;
+            font-size: 10px;
+            text-align: center;
+            font-family: Jetbrains Mono, 'sans-serif','monospace';
+            justify-content: none;
+        }
+        #description{  
+            font-family: Concert One, 'sans-serif','monospace';   
+            text-align: justify;
+            padding: 0px 20px 0px 20px;
+            font-size: 15px;
+        }
+        
+        a{
+            text-decoration: none;
+            font-size: 10px;
+        }
+        footer, #Jam{
+            font-family: "Ubuntu", 'sans-serif','monospace';
+            font-style: normal;
+            text-align: center;
+            justify-content: center;
+            padding-top: 100px;
+        }
 }
